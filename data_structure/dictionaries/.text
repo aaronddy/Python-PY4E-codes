@@ -1,0 +1,21 @@
+a story of two collections
+
+1. List
+  : A linear collection of values that stay in order
+    like a Pringles, that stack in order
+
+2. Dictionary
+  : A "bag" of values, each with its own label, there's no order
+    it's like a key with its own label
+
+
+    - Dictionaries are Python's most powerful data collection
+    - Dictionaries allow us to do fast database-like operations in Python
+    - Dictionaries have different names in different languages
+       - Associative Arrays(연관배열) - Perl / PHP
+       - Properties or Map or HashMap - Java
+       - Property Bag = C# / .Net
+
+
+    Lists index their entries based on the position in the List.
+    Dictionaries are like bags - no order, so we index the things we put in the Dictionary with a "lookup tag"
