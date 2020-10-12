@@ -1,0 +1,50 @@
+1. Tuples are like lists
+
+: Tuples are another kind of sequence that functions much like a list
+  - they have elements which are indexed starting at 0
+
+2. Tuples are immutable
+
+: Unlike a list, once you create a tuple, you cannot alter its contents - similar to a starting
+
+튜플이 리스트보다 더 효율적, 접근성이 빠름
+따라서 값을 저장하고 접근만 할 거라면 튜플을 쓰는 게 더 나음
+
+
+3. Things not to do with tuplea
+x = (3, 2, 1)
+x.sort()
+x.append()
+x.reverse()
+
+==> 'tuple' object has no attribute 'sort', 'append', 'reverse'
+
+t = tuple()
+dir(t)   # ['count', 'index']
+
+
+4. Tuples are more efficient
+
+- Since Python does not have to build tuple structure to be modifiable, they are simpler and more efficient in terms of memory use and performance than lists.
+- So in our program when we are making "temporary variables", we prefer tuples over lists
+
+
+5. Tuples and Assignment
+ 
+: We can also put a tuple on the left-hand side of an assignment statement
+  We can even omit the parentheses
+
+
+7. Tuples are comparable
+
+: The comparison operators work with tuples and other sequences. If the first item is equal, Python goes on to the next element, and so on, until it finds element that differ. 
+
+
+8. Sorting lists of tuples
+
+- We can take advantage of the ability to sort a list of tuples to get a sorted version of a dictionary.
+
+
+9. Sort by values instead of key
+
+- If we could construct a list of tuples of the form (value, key) we could sort by value
