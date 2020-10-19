@@ -1,0 +1,42 @@
+1. ASCII
+: American Standard Code for Information Interchange
+  미국과 유럽에서 주로 사용하는 문자 집합
+  1970년대에 들어 상호 운용이 필요해지고 그러면서 문자 집합의 표준을 정하게 됨. 문제는 표준을 서구 위주로 정하게 되었고 다른 문자들이 빠지게 됨.
+
+  2. Representing Simple Strings
+  - Each character is represented by a number between 0 and 256 stored in 8 bits of memeory
+  - We refer to "8 bits of memeory as a "byte" of memeory -(i.e. my disk drive contains 3 Terabytes of memeory)
+  - The ord() function tells us the numeric value of a simple ASCII character
+
+  - In the 1960's and 1970's, we just assumed that one byte was one character
+  시대가 지나면서 문자는 점점 더 복잡해지고 사용하는 문자도 많아지면서 ASCII는 한계에 부딪힘 => 유니코드 등장
+  유니코드는 몇 십억 개의 문자를 포함하고 새로운 문자를 위해 몇 십억 개를 더 저장할 수 있음
+  하지만 유니코드의 문제는 네트워크로 전송할 때 용량이 과도하게 큼
+
+  3. Multi-Byte Characters 
+  - To represent the wide range of characters computers must handle we represent characters with more than one byte.
+
+    - UTF-16: Fixed length / Two bytes (한 문자에 2바이트, 고정된 크기)
+    - UTF-32: Fixed length / Four bytes (한 문자에 4바이트, 고정된 크기)
+    - UTF-8: 1-4 bytes (동적으로 한 문자에 1-4바이트까지 변경)
+      - Upwards compatible with ASCII  (1바이트는 ASCII와 동일, 실제로 ASCII는 utf-8 파일)
+      - Automatic detection between ASCII and UTF-8
+      - UTF-8 is recommended practice for encoding data to be exchanged between systems (utf-8이 권장되는 분위기, utf-32가 나타내는 것을 다 나타낼 수 있으면서도 ASCII와 겹치는 등 용량을 압축한 버전이기 때문)
+
+
+4. Two Kinds of Strings in Python
+- Python 2에서 일반적인 문자열은 'byte' 문자열(byte와 문자열이 동일, 유니코드가 다른 것)로 ASCII 코드를 사용하는 라틴 문자열. 만약 유니코드로 표현하고 싶으면 다른 종류의 객체(언어, ex. 한국어)를 사용해야 했음
+- Python 3.0 또는 이후부터는 문자열을 유니코드와 같게 만듦(문자열은 유니코드, byte가 다른 것). 어떤 종류의 객체이든(언어이든) 모두 다 string으로 출력됨. 문자열은 유니코드 형식으로 다루어지게 됨.
+
+
+5. Python3 and Unicode
+- In Python 3, all strings internally are "UNICODE".
+- Working with string variables in Python programs reading data from files usually "just works". 
+(프로그램 내부에서 파일을 읽거나 작업하는 데는 따로 인코딩 형식을 저장하지 않아도 거의 문제가 없음. )
+- When we talk to a network resource using sockets or talk to a database we have to encode and decode data(usually to UTF-8)
+(하지만 소켓 또는 외부와 통신할 때는 어떤 데이터를 다루는지 잘 알아야 함. )
+
+
+6. Python Strings to Bytes
+- When we talk to an external resource like a network socket we sends bytes, so we need to encode Python 3 strings into a given character encoding.
+- When we read data from an external resource, we must decode it based on the character set so it is properly represented in Python 3 as a string.
