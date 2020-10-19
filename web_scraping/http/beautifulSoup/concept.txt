@@ -1,0 +1,18 @@
+1. What is 'Web Scrapinp'?
+- When a program or script pretends to be a browser and retrieves web pages, looks at those web pages, extracts information, and then looks at more web pages.
+- Search engines scrape web pages - we call this "spidering the web" or "web crawling"
+
+2. Why Scrape? 수집된 데이터는 다양한 용도로 사용 가능
+- Pull data - particularly social data - who links to who?
+- Get your own data back out of some system that has no "export capability"
+- Monitor a site for new information
+- Spider the web to make a database for a search engine
+
+3. Scraping Web pages
+- There is some controversy about web page scraping and some sites are a big snippy about it.
+- Republishing copyrighted information is not allowed
+- Violating terms of service is not allowed
+
+4. The Easy Way - Beautiful Soup
+- You could do string searches the hard way.
+- Or use the free software library called 'BeautifulSoup'

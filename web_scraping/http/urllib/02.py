@@ -18,7 +18,7 @@ fhand2 = urllib.request.urlopen('http://data.pr4e.org/romeo.txt')
 
 counts = dict()
 for line in fhand2:
-    words = line.decode().split()
+    words = line.decode().split()  # bytes 디코딩하기
     for word in words:
         counts[word] = counts.get(word, 0) + 1
     print(counts)   # 문장마다 카운팅
