@@ -1,0 +1,42 @@
+=== 웹에서 프로그램들끼리 소통할 수 있는 데이터 형식의 종류에 대해 ===
+
+1. Data on the Web
+프로그램에 자체에게 더 익숙한 데이터 형식을 만드는 것
+- With the HTTP Request/Response well understood and well supported, there was a natural move toward exchanging data between programs using these protocols.
+- We needed to come up with an agreed way to represent data going between applications and across networks.
+- There are two commonly used data formats: XML and JSON 
+
+2. XML
+: 네트워크로 전송하고자 데이터를 마크업하는 형식
+
+3. eXtensible Markup Language
+- Primary purpose is to help information systems share structured data.
+- It started as a simplified subset of the Standard Generalized Markup Language(SGML), and is desinged to be relatively human-legible.
+
+4. XML Terminology
+- Tags: indicating the beginning and ending of elements
+- Attributes: Keyword/value pairs on the opening tag of XML
+- Serialize/De-serialize(직렬화/역직렬화): Convering data in one program into a common format that can be stored and/or tranmitted between systems in a programming language-independent manner
+
+
+5. XML basics
+
+<person>                   # start tag
+  <name>Daye</name>
+  <phone type='intl'>
+    +10 6595 5105          # text content
+  </phone>
+  <email hide='yes'/>       # self-closing tag & attribute
+</person>                  # end tag  
+
+
+- 태그명을 마음대로 설정 가능(html과 다른 점)
+- xml 내 문법오류는 html보다 엄격하게 다뤄짐. 문법오류가 발생하면 받는 쪽에서 전혀 이해를 못함
+
+
+6. white space(공백)
+- 줄의 끝은 중요하지 않음
+- 텍스트 부분에서 공백은 없어짐
+- 오직 가독성만을 위해 들여쓰기를 함(indent)
+
+7. XML as Paths
