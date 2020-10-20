@@ -39,4 +39,16 @@
 - 텍스트 부분에서 공백은 없어짐
 - 오직 가독성만을 위해 들여쓰기를 함(indent)
 
-7. XML as Paths
+7. XML Schema
+특정 xml 문서가 어떤 조건이나 형식에 부합하는지를 보는 것, xml 문서가 맞는지 검증
+- Description of the legal format of an XML Document
+- Expressed in terms of constraints on the structure and content of documents
+- Often used to specify a 'contract' between systems - "My system will only accept XML that conforms to this particular Schema."
+- If a particular piece of XML meets the specification of the Schema - It is said to "validate"
+
+스키마 계약은 그 자체로 하나의 xml이며, 'xs:completeType' 을 지닌 XML의 한 종류
+
+8. Many XML Schema Language
+XML 스키마 언어에는 여러가지 종류가 있음
+- Document Type Definition(DTD), SGML, XML Schema from W3C(XSD)
+- 상대적으로 최근에 나온 XSD를 활용할 것.

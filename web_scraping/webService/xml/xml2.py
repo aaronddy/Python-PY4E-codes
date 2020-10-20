@@ -1,4 +1,4 @@
-import xml.etree.ElementTree as ET
+import xml.etree.ElementTree as ET   # xml 모듈
 
 input = '''
 <stuff>                  
@@ -15,8 +15,8 @@ input = '''
 </stuff>              
 '''
 
-stuff = ET.fromstring(input)
-lst = stuff.findall('users/user')   # users 태그 아래 user 태그를 가져와라
+stuff = ET.fromstring(input)      # input 스트링을 parsing해서 stuff 객체로 대입
+lst = stuff.findall('users/user')   # users 태그 아래 user 태그를 가져와라/ 리스트의 형태로 두개의 user 태그가 들어감
 print('User count:', len(lst))   # 2
 
 for item in lst:
