@@ -1,0 +1,4 @@
+1. JavaScript Object Notation
+: 또 다른 직렬화 방식
+
+- Object literal Notation in JavaScript
