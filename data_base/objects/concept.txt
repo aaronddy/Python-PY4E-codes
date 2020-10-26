@@ -27,3 +27,22 @@
 
 - Ignore the ones with underscores(these are used by Python itself)
 - The rest are real operations(method) that object can perform 
+
+5. Object Lifecycle
+- Objects are created, used and discarded
+- We have special blocks of code (methods) that get called
+  - at the moment of creation(constructor)
+  - at the moment of destruction(destructor)
+- Constructors are used a lot
+- Destructor are seldom used
+
+6. Constructor
+- The primary purpose of the constructor is to set up some instance variables to have the proper initial values when the object is created.
+- In object oriented programming, a constructor in a class is a special block of statements called when an object is called. 
+  생성자는 객체가 생성되었을 때 불러오는 코드, 객체를 만들기 위해
+
+7. Many Instances
+- We can create lots of objects - the class is the template for the object  하나의 클래스에서 여러개의 인스턴스(객체) 생성 가능
+- We can store each distinct object in its own variable                     각각의 인스턴스는 각자의 변수에 저장됨
+- We call this having multiple instances of the same class                  이것을 동일 클래스의 다중 인스턴스라고 함
+- Each instance has its own copy of the instance variables                  각각의 인스턴스는 각자의 인스턴스 변수를 갖고 있음

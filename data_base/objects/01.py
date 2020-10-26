@@ -19,4 +19,4 @@ print("Type", type(an))                # Type <class '__main__.PartyAnimal'>
 print("Dir", dir(an))                  # Dir ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 
                                        # 'party', 'x']  
 
-                                       # '.' 은 객체를 들여다보는 연산자
+                                       # '.' 은 객체를 들여다보는 연산자    
