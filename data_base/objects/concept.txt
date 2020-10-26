@@ -1,0 +1,29 @@
+1. Object oriented
+- A program is made up of many cooperating objects.
+- Instead of being the "whole program" - each object is a littls 'island' within the program and cooperatively working with other objects.
+- A program is made up of one or more projects working together - ojbects make use of each other's capabilities.
+
+2. Objects
+- An Ojbect is a bit of self-contained Code and Data.
+- A key aspect of the Object approach is to break the problem into smaller understandable parts(divide and conquer)
+- Objects have boundaries that allow us to ignore un-needed detail
+- We have been using objects all along: String Object, Integer Object, Dictionary Object, List Object...
+
+3. Definitions
+  Class: a template - a Dog
+  Method or Message - a defined capability of a class - bark()
+  Field of Attribute - a bit of data in a class - length
+  Object of Instance - a particular instance of a class - Lessie
+
+4. Playing with dir() and type()
+: dir(), type() 을 이용해서 변수, 타입, 객체를 검사할 수 있음.
+
+>>> x = list()
+>>> type(x)    => it tells us something *about* a variable
+<type 'list'>    
+>>> dir(x)               # The dir() command lists capabilities
+['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 
+ 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+
+- Ignore the ones with underscores(these are used by Python itself)
+- The rest are real operations(method) that object can perform 
