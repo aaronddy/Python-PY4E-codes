@@ -46,3 +46,15 @@
 - We can store each distinct object in its own variable                     각각의 인스턴스는 각자의 변수에 저장됨
 - We call this having multiple instances of the same class                  이것을 동일 클래스의 다중 인스턴스라고 함
 - Each instance has its own copy of the instance variables                  각각의 인스턴스는 각자의 인스턴스 변수를 갖고 있음
+
+8. Inheritance
+- When we make a new class - we can reuse an existing class and inherit all the capabilities of an existing class and then add our own little bit to make our new class
+  새로운 클래스를 기존에 있던 클래스로부터 만들어나감, 더욱 확장시킴. 또 다른 말로는 '서브클래싱'이라고 함
+- Another form of store and reuse
+- Write once - reuse many times
+- The new class(child) has all the capabilities of the old one(parent) - and then some more
+  기존의 클래스는 부모, 새로운 클래스는 자식으로 부모-자식 관계라고 표현
+
+  == Summary ==
+  1) Object Oriented Programming is a very structured approach to code reuse.
+  2) We can group data and functionality together and create many independent instances of a class

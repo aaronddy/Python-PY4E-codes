@@ -1,9 +1,9 @@
 # simple example
 
 class PartyAnimal:                     # class is a reserved word / PartyAnimal is a template for making PartiAnimal objects
-    x = 0                              # Each PartyAnimal object has a bit of data.
+    x = 0                              # Each PartyAnimal object has a bit of data == Attribute
 
-    def party(self):
+    def party(self):                   # Method
         self.x +=1
         print('So far', self.x)        # Each PartyAnimal object has a bit of code.  클래스 생성
 
