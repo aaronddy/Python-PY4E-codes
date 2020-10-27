@@ -1,0 +1,16 @@
+1. Relational Databases
+: Relational Databases model data by storing rows and colums in tables. The power of Relational Databases lies in its ability to efficiently retrieve data from those tables
+and in particular where there are multiple tables and the relationships between those tables involved in the query.
+
+- Database: contains many tables
+- Relation (or table): contains tuples and attributes
+- Tuple (or row): a set of fields that generally represents an "object" like a person or a music track
+- Attribute (also column or field): one of possibly many elements of data corresponding to the object represented by the row
+
+2. SQL
+: Structured Query Language is the language we used to issue commands to the database
+
+- Create
+- Read
+- Update
+- Delete
