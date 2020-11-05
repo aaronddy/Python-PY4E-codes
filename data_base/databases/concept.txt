@@ -14,3 +14,45 @@ and in particular where there are multiple tables and the relationships between 
 - Read
 - Update
 - Delete
+
+3. Database Design
+- Database design is an art form of its own with particular skills and experience
+
+4. Building a Data Model
+- Drawing a picture of the data objects for our application and then figuring out how to represent the object and their relationships
+- Basic Rule: Don't put the same string data in twice - use a relationship instead
+- When there is one thing in the "real world", there should be one copy of that thing in the database
+
+
+# part 4. Representing Relationships in a Database
+5. Database Nomalization(3NF)
+- Use integers for keys and for references
+- Add a special 'key' column to each table which we will make references to. By convention, many programmers call this column 'id'
+
+6. Three Kinds of Keys
+- Primary key: generally an integer auto-increment field(id열에 있는 숫자)
+- Logical key: What the outside world uses for lookup(밴드의 이름이나 앨범의 이름과 같이 어떤 텍스트를 찾을 때 참고하는 키)
+- Foreign key: generally an integer key pointing to a row in another table(다른 테이블의 프라이머리 키를 가리키는 키)
+
+7. Key Rules
+- Never use your logical key as the primary key(논리키는 반드시 분리되어야 하며 정수인 프라이머리 키와 같이 사용됨)
+- Logical keys can and do change, albeit slowly(논리키는 바뀔 수 있음)
+- Relationships that are based on matching string fields are less efficient than integers(정수보다 문자열로 이루어진 필드로 관계를 표현하면 훨씬 비효율적)
+
+8. Foreign keys
+- A foreign key is when a table has a column that contains a key which points to the primary key of another table
+- When all primary keys are integers, then all foreign keys are intengers - this is very good
+
+
+# part 6. Using Join Across Tables
+9. Relational Power 
+- By removing the replicated data and replacing it with references to a single copy of each bit of data, we build a "web" of information that the relational database can read through very quickly
+  - even for very large amounts of data
+- Often when you want some data, it comes from a number of tables linked by these foreign keys
+
+10. The JOIN Operation
+- The JOIN operation links across several tables as part of a select operation
+- You must tell the JOIN how to use the keys that makes the connection between the tables using an ON clause
+ex. SELECT Album.title, Artist.name from Album join Artist on Album.artist_id = Artist.id
+
+- ON 절을 제외하고 실행하면 각각의 테이블의 로우 수대로 모든 조합이 이루어짐, ON 절은 거름망과 같은 역할
