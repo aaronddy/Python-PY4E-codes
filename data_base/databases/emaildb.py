@@ -9,7 +9,7 @@ DROP TABLE IF EXISTS Counts''')       # 해당 파일에 Counts 테이블이 존
 cur.execute('''
 CREATE TABLE Counts (email TEXT, count INTEGER)''')     # 이메일과 조회 수를 컬럼으로 갖는 Counts 테이블 생성
 
-fname = input("Enter file name")
+fname = input("Enter file name: ")
 if(len(fname) < 1): fname = 'mbox-short.txt'
 fh = open(fname)
 
@@ -31,9 +31,9 @@ for line in fh:
     conn.commit()      # 메모리에 정보들을 저장하다가 모든 정보를 디스크로 옮기게 하는 커맨드
 
 
-sqlstr = 'SELECT email, count FROM Counts ORDER BY count DESC'     # 실행할 커맨드
+sqlstr = 'SELECT email, count FROM Counts ORDER BY count DESC LIMIT 10'     # 실행할 커맨드
 
 for row in cur.execute(sqlstr):
-    print('Email',str(row[0]), 'Count',row[1])
+    print(str(row[0]), row[1])
 
 cur.close()     # 커서 종료
