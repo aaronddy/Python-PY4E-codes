@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Date</key><date>2020-11-06T04:44:16Z</date>
+	<key>Application Version</key><string>12.10.10.2</string>
+	<key>Features</key><integer>5</integer>
+	<key>Show Content Ratings</key><true/>
+	<key>Music Folder</key><string>file://localhost/C:/Users/user/Music/iTunes/iTunes%20Media/</string>
+	<key>Library Persistent ID</key><string>23FFB3BD9A355179</string>
+	<key>Tracks</key>
+	<dict>
+	</dict>
+	<key>Playlists</key>
+	<array>
+		<dict>
+			<key>Name</key><string>보관함</string>
+			<key>Description</key><string></string>
+			<key>Master</key><true/>
+			<key>Playlist ID</key><integer>68</integer>
+			<key>Playlist Persistent ID</key><string>BA6E9FCDB98FD191</string>
+			<key>Visible</key><false/>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>다운로드됨</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>105</integer>
+			<key>Playlist Persistent ID</key><string>FD1D7958D37D0D79</string>
+			<key>Distinguished Kind</key><integer>65</integer>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>음악</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>78</integer>
+			<key>Playlist Persistent ID</key><string>45667FB8F07127C8</string>
+			<key>Distinguished Kind</key><integer>4</integer>
+			<key>Music</key><true/>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>다운로드됨</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>108</integer>
+			<key>Playlist Persistent ID</key><string>FD89E54F1B474178</string>
+			<key>Distinguished Kind</key><integer>66</integer>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>동영상</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>81</integer>
+			<key>Playlist Persistent ID</key><string>311BBB95625FF5DF</string>
+			<key>Distinguished Kind</key><integer>2</integer>
+			<key>Movies</key><true/>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>TV 프로그램</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>84</integer>
+			<key>Playlist Persistent ID</key><string>C37DAA320A5C2AA7</string>
+			<key>Distinguished Kind</key><integer>3</integer>
+			<key>TV Shows</key><true/>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>다운로드됨</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>111</integer>
+			<key>Playlist Persistent ID</key><string>415D26E62985A519</string>
+			<key>Distinguished Kind</key><integer>67</integer>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>팟캐스트</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>75</integer>
+			<key>Playlist Persistent ID</key><string>0511A48DB600F1C7</string>
+			<key>Distinguished Kind</key><integer>10</integer>
+			<key>Podcasts</key><true/>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>오디오북</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>87</integer>
+			<key>Playlist Persistent ID</key><string>A004CD39C3F8B445</string>
+			<key>Distinguished Kind</key><integer>5</integer>
+			<key>Audiobooks</key><true/>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>Genius</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>93</integer>
+			<key>Playlist Persistent ID</key><string>4DA7408479E6DA65</string>
+			<key>Distinguished Kind</key><integer>26</integer>
+			<key>All Items</key><true/>
+		</dict>
+	</array>
+</dict>
+</plist>
