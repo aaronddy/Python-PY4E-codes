@@ -56,3 +56,16 @@ and in particular where there are multiple tables and the relationships between 
 ex. SELECT Album.title, Artist.name from Album join Artist on Album.artist_id = Artist.id
 
 - ON 절을 제외하고 실행하면 각각의 테이블의 로우 수대로 모든 조합이 이루어짐, ON 절은 거름망과 같은 역할
+
+
+# part 7. Many-to-Many Relationships
+11. Many to Many
+- Sometimes we need to model a relationshipt that is many-to-many
+- We need to add a "connection" table(연결 테이블, 교차 테이블) with two foreign keys
+- There is usually no separate primary key(프라이머리 키가 존재하지 않고 외래키만 있는 연결테이블)
+
+12. Complexity Enables Speed
+- Complexiby makes speed possible and allows you to get very fast results as the data size grows
+- By normalizing the data and linking it with integer keys, the overall amount of data which the relational database must scan is far lower than 
+  if the data simply flattened out
+- It might seem like a tradeoff - spend some time designing your database so it continues to be fast when your application is a success  
