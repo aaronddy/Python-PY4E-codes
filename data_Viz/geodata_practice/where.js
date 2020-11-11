@@ -294,5 +294,6 @@ data_locations = [
 [-96.5847249,-96.5847249, 'Manhattan, KS 66506, USA'],
 [-3.7299424,-3.7299424, 'Av. Séneca, 2, 28040 Madrid, Spain'],
 [21.785369,21.785369, 'Panepistimioupoli Patron 265 04, Greece'],
-[11.8774462,11.8774462, 'Via 8 Febbraio 1848, 2, 35122 Padova PD, Italy']
+[11.8774462,11.8774462, 'Via 8 Febbraio 1848, 2, 35122 Padova PD, Italy'],
+[-3.3628674,-3.3628674, 'Plaza de San Diego, s/n, 28801 Alcalá de Henares, Madrid, Spain']
 ];

@@ -61,11 +61,11 @@ for line in fh:
     print('Retrieving', url)
     uh = urllib.request.urlopen(url, context=ctx)
     data = uh.read().decode()                                # 요청으로 받은 응답 데이터 디코딩해서 읽기(json형태)
-    print('Retrieved', len(data), 'characters', data[:20].replace('\n', ' '))       # 받은 데이터를 인덱스 20까지만 출력
+    print('Retrieved', len(data), 'characters', data[:20].replace('\n', ' '), 'type', type(data))       # 받은 데이터를 인덱스 20까지만 출력, string 타입
     count += 1                                               # 들어온 url 데이터 카운팅
 
     try:                               # try 문 시행(status 코드를 파악하기 위해 json parsing 과정을 추가)
-        js = json.loads(data)          # json parsing
+        js = json.loads(data)          # json문자열을 파이썬 타입으로 디코딩
         # print("trying", js)
     except:
         print(data)      # 유니코드가 에러를 일으켰을 시
